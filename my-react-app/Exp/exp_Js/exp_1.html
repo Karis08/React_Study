@@ -4,16 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
 </head>
-<body>
-    <h2>Style 적용, tag 감추기, 보여주기 변경 실습</h2>
+<h2>push F12 activate chrome debugging mode</h2>
+<h3>click button to check display by console output</h3>
+<span>Total Click: 0</span>
+<button id = "btn" type="button" onclick="myFunction()">Try 
+it</button>
+<script>
+let cnt = 0;
+function myFunction() {
+console.log('click event!!'+ cnt++);
+}
+</script>
 
-    <p id="demo">Hello!</p>
-
-    <button onclick="document.getElementById('demo').style.display='none'">
-        클릭! 감추기</button>
-        
-    <button onclick="document.getElementById('demo').style.display='block'">
-        클릭! 보여주기</button>
 </body>
 </html>
